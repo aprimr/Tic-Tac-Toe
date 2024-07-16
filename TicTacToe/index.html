@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <div class="msg-wrapper">
+      <div class="message">
+        <div class="content">
+          <p id="txt">The Winner is <span id="winner"></span></p>
+          <button id="replay">Replay</button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="wrapper">
+        <p>Tic Tac Toe</p>
+        <div class="turn-wrapper">
+          <!-- <button id="btn">Turn : <span id="turn">X</span></button> -->
+           <div id="turnX" class="active" >X's Turn</div>
+           <div id="turnY" >O's Turn</div>
+        </div>
+        <div class="container">
+          <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+          </div>
+        </div>
+        <button id="reset-btn" type="reset">Reset Game</button>
+      </div>
+    </main>
+    <p class="footer">aprim @ 2024</p>
+    <script src="script.js"></script>
+  </body>
+</html>

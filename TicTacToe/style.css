@@ -1,0 +1,162 @@
+@font-face {
+    font-family: thin;
+    src: url(fonts/raleway.thin.ttf);
+}
+
+*{
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    cursor: pointer;
+}
+body{
+    background-color: #5C85B9;
+}
+main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+main .wrapper p , p {
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 30px 0 20px 0;
+}
+
+main .wrapper .turn-wrapper{
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 3px;
+    height: 40px;
+    margin: 0 145px 10px 145px ;
+    
+}
+#turnX,#turnY{
+    padding-left: 3px;
+    height: 30px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    transition: ease 1ms;
+}
+.active{
+    background-color: #5C85B9;
+    border-radius: 3px;
+    color: #fff;
+}
+
+main .wrapper .container {
+    height: 63vmin;
+}
+
+main .wrapper .container .game {
+    
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+
+main .wrapper .container .game .box {
+    font-family: thin;
+    font-weight: 600;
+    font-size: 9vmin;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+}
+
+main .wrapper #reset-btn , #replay ,#btn{
+    margin: 30px 0 10px  0 ;
+    height: 50px;
+    width: 190px;
+    font-size: 25px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #5C85B9;
+    font-weight: 600;
+}
+main .wrapper #btn #turn{
+    font-family: thin;
+    font-weight: 800;
+}
+main .wrapper #reset-btn:hover,#replay:hover{
+    box-shadow: 1px 1px 20px #9ab8e0;
+}
+
+.msg-wrapper{
+    display: none;
+    justify-content:center ;
+    align-items:center ;
+    height: 100vh;
+}
+.msg-wrapper .message{
+    height: 30vmin;
+    width: 50% ;
+    background-color: white;
+    border-radius: 5px;
+}
+.msg-wrapper .message{
+    display: flex;
+    justify-content:center ;
+    align-items:center ;
+    text-align: center;
+}
+.msg-wrapper .message p{
+    color: #5C85B9;
+}
+.msg-wrapper .message #replay {
+    background-color: #5C85B9;
+    color: white;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: #a7cdff;
+    margin: 0;
+    font-size: 15px;
+}
+@media screen and (max-width: 520px) {
+    .msg-wrapper .message{
+        height: 60vmin;
+        width: 100% ;
+    }
+    main .container{
+        margin: 80px 0 0 0 ;
+    }
+    main .wrapper #reset-btn{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .msg-wrapper{
+        height: 90vh;
+    }
+    main .wrapper .container .game{
+        height: 90vmin;
+        width: 90vmin;
+    }
+    main .wrapper .container .game .box{
+        height: 28vmin;
+        width: 28vmin;
+    }
+    .footer{
+        display: none;
+    }
+}
